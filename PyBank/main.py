@@ -20,7 +20,6 @@ with open(budget_data, newline = "") as csvfile:
    
     for row in csvreader:
         dates.append(row[0])
-        
         change = int(row[1])-value
         profits.append(change)
         value = int(row[1])
